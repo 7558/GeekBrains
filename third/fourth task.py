@@ -8,3 +8,19 @@
 # Второй — более сложная реализация без оператора **,
 # предусматривающая использование цикла.
 
+def my_func(x, y):
+    return print(x**y)
+
+def my_func2(x, y):
+    result = x
+    for i in range(1, y):
+        result = result * x
+    return print(result)
+
+
+print("Программа возведет в нужную степень положительное число. ")
+x = int(input("Введите число, которое необходимо возвести в степень: "))
+y = int(input("В какую степень: "))
+
+my_func(x, y)
+my_func2(x, y)
