@@ -3,3 +3,18 @@
 # город проживания, email, телефон.
 # Функция должна принимать параметры как именованные аргументы.
 # Осуществить вывод данных о пользователе одной строкой.
+
+def user_profile(name, last_name, year, country, email, phone):
+    return print(f"\nКраткая сводка о тебе:\nТебя зовут {name};\n"
+                 f"Твоя фамилия {last_name};\nТы родился в {year} "
+                 f"году;\nТы проживаешь в {country};\nТвой email {email};\nТвой номер"
+                 f" телефона {phone}.")
+
+name = input("Введите ваше имя: ")
+lastName = input("Введите вашу фамилию: ")
+year = input("Введите ваш год рождения: ")
+country = input("Введите вашу страну проживания: ")
+email = input("Введите ваш email: ")
+phone = input("Введите ваш телефон: ")
+
+user_profile(name, lastName, year, country, email, phone)
