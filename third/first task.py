@@ -5,11 +5,14 @@
 
 def divison_count():
     """Выполняем деление двух чисел, полученных от пользователя."""
-    print("Выполним деление двух чисел.")
-    num1 = float(input("Введите первое число: "))
-    num2 = float(input("Введите второе число: "))
-    result = round(num1 / num2, 2)
-    return result
+    try:
+        print("Выполним деление двух чисел.")
+        num1 = float(input("Введите первое число: "))
+        num2 = float(input("Введите второе число: "))
+        result = round(num1 / num2, 2)
+        return result
+    except ZeroDivisionError:
+        return print("Ноль на ноль? Серьезно?")
 
 
 print(f"Результат:  {divison_count()}")
