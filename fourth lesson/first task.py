@@ -3,3 +3,14 @@
 # Во время выполнения
 # расчёта для конкретных значений необходимо запускать скрипт с параметрами.
 
+from sys import argv
+
+name_script, production, rates, bonus = argv
+name_script = "Скрип для подсчета зарабатной платы."
+
+print(name_script)
+
+result = (int(production) * int(rates)) + int(bonus)
+
+
+print("Скрип высчитал вашу зарабатную плату: ", str(result))
